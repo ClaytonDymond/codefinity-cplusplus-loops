@@ -2,7 +2,7 @@
 
 int findMax(int arr[], int size)
 {
-    int maxRating = 0;
+    int maxRating = arr[0];
 
     for (int index = 0; index < size; index++)
     {
