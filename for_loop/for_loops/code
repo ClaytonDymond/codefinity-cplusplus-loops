@@ -1,0 +1,23 @@
+#include <iostream>
+
+int findMax(int arr[], int size)
+{
+    int maxRating = 0;
+
+    for (int index = 0; index < size; index++)
+    {
+        if (arr[index] > maxRating)
+            maxRating = arr[index];
+    }
+
+    return maxRating;
+}
+
+int main()
+{
+    int ratings[6] = {3, 5, 2, 4, 5, 1};
+    int size = 6;
+    int maxRating = findMax(ratings, size);
+    std::cout << "Maximum rating: " << maxRating;
+    return 0;
+}
